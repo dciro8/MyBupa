@@ -1,0 +1,56 @@
+ion-content {
+    --background: linear-gradient(180deg, #2ecc71, #289c59, #1a743f);
+
+    .logo {
+        margin-top: 20%;
+        text-align: center;
+    }
+
+    .logoCenter {
+        margin: 0 auto;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: linear-gradient(290deg, #31da79, #29b866);
+        box-shadow:  20px 20px 60px #27ad60, -20px -20px 60px #35eb82;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ion-icon {
+            zoom: 4;
+            color: white;
+            animation: rotating 2s linear infinite;
+        }
+    }
+
+    ion-item {
+        --background: transparent;
+        --border-color: white;
+        --color: white;
+        --highlight-color-focused: yellow;
+    }
+
+    ion-button {
+        --background: white;
+        --color: green;
+    }
+
+    .registerText {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: white;
+        font-size: larger;
+    }
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}

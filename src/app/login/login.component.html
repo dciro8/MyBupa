@@ -1,14 +1,44 @@
 <ion-content>
-  <h1>{{title}}</h1>
+  <ion-toolbar color="primary">
+    <ion-img src="../../assets/img/BackgroundImage.png"></ion-img>
+    <ion-title></ion-title>
+  
+  </ion-toolbar>
 
   <ion-item>
-    <ion-input placeholder="usuario" type="text" [(ngModel)]="loginModel.username"></ion-input>
+    <ion-label class="labelTitle">Enter My Bupa</ion-label>
   </ion-item>
+  
   <ion-item>
-
-    <ion-input placeholder="Password" type="password" [(ngModel)]="loginModel.password"></ion-input>
+    <ion-icon class="icon-big" name="person" item-start ></ion-icon>
+    <ion-input class="labelimput" placeholder=" Usuario" type="text" [(ngModel)]="loginModel.username"></ion-input>
   </ion-item>
-  <!-- <ion-button expand="block" (click)="llamarTab()" > Block Button</ion-button> -->
 
-  <ion-button expand="block" (click)="login()" > Block Button</ion-button>
+
+  <ion-item>
+    <ion-icon class="icon-big" name="key" item-start ></ion-icon>
+    
+    <ion-input class="labelimput"  placeholder="Password" type="password" [(ngModel)]="loginModel.password">
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="recordarme"> Recordarme</ion-label> 
+    <ion-checkbox item-left secondary checked="true"></ion-checkbox>
+  </ion-item>
+
+ 
+
+  <ion-button  class="color"  style="color:white" expand="block" (click)="login()" > Enter</ion-button>
+
+  <a href="http://www.tutorialehtml.com/">Register </a>
+  <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+  <a href="http://www.tutorialehtml.com/">Forgot password</a>
+
+
+  <ion-item>
+    <ion-label color="medium" class="version">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.0.10</ion-label> 
+  </ion-item>
+  
+
 </ion-content>

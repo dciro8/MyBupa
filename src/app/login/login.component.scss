@@ -1,0 +1,42 @@
+.labelTitle{ font-size: 30px !important; 
+    font-weight:bold;
+    color: black;
+    justify-content: initial;
+    margin-top: 17px; }
+
+    .labelimput{ font-size: 20px !important; 
+        font-weight:normal;
+        color: #3B7DD8;
+        justify-content: initial;
+        margin-top: 17px; }
+
+        .icon-big 
+        { font-size: 150%; 
+            display: block; 
+            color: #3B7DD8;
+             margin-bottom: 10px; }
+
+             .color{
+                  color: #3B7DD8;
+                  box-shadow: 0px 14px 125px;
+                  border-radius: 125px;
+            }
+
+    .recordarme{ font-size: 15px !important; 
+        font-weight:normal;
+        color: #3B7DD8;
+        justify-content: initial;
+        margin-top: 17px; }
+
+        .version{ font-size: 15px !important; 
+            font-weight:normal;
+            justify-content: initial;
+            margin-top: 17px; }
+
+            div.CustomColour * {
+                color: #3B7DD8 !important;
+             }
+
+             ion-content.background{
+                --background: url(../../assets/img/HomeBackground.png) 0 0/100% 100% no-repeat;
+            }
