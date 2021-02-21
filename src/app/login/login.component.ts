@@ -39,12 +39,14 @@ export class LoginComponent implements OnInit {
     // localStorage.setItem('User', this.loginModel.username);
     // localStorage.setItem('Password', this.loginModel.password);
 
+    
+
     this.loginUser.getLogin(this.loginModel).subscribe(
       (res: LoginResult) => {
         console.log(res);
 
-      console.log(this.loginResult.token);
-       this.loginResult=res;
+        this.presentAlert(JSON.stringify(res));
+     console.log('Dciro1234567890');
         this.router.navigate(['/tabs']);
       }
       , error => {

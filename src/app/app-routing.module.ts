@@ -4,23 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+  
+ { path: '', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
   {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
  },
-
-
-  //   // {path: '', redirectTo: 'login', pathMatch:'full' },
-  //  {path: 'Login',  component: LoginComponent },
-
-
-  //  {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.component').then(m => m.HomeComponent)
-  // },
-  { path: '', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-
 ];
 @NgModule({ 
   imports: [
