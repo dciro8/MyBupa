@@ -1,0 +1,14 @@
+<ion-content>
+  <h1>{{title}}</h1>
+
+  <ion-item>
+    <ion-input placeholder="usuario" type="text" [(ngModel)]="loginModel.username"></ion-input>
+  </ion-item>
+  <ion-item>
+
+    <ion-input placeholder="Password" type="password" [(ngModel)]="loginModel.password"></ion-input>
+  </ion-item>
+  <!-- <ion-button expand="block" (click)="llamarTab()" > Block Button</ion-button> -->
+
+  <ion-button expand="block" (click)="login()" > Block Button</ion-button>
+</ion-content>
