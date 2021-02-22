@@ -1,11 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TabsPage } from '../tabs/tabs.page';
 import { Tab3Page } from './tab3.page';
 
 const routes: Routes = [
   {
-    path: '',
-    component: Tab3Page,
+    path: 'tabs',
+    component: TabsPage,
+    children: [
+      {
+        path: 'schedule',
+        children: [
+          {
+            path: '',
+            loadChildren: '../schedule/schedule.module#ScheduleModule'
+          }
+        ]
+      },
+      {
+        path: '',
+        redirectTo: '/app/tabs/schedule',
+        pathMatch: 'full'
+      }
+    ]
   }
 ];
 
@@ -14,3 +31,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class Tab3PageRoutingModule {}
+
