@@ -36,12 +36,8 @@ export class LoginComponent implements OnInit {
   ngOnInit() { }
 
   login() {
-    // this.presentAlert(`${this.loginModel.username} ${loginModel.password}`);
-    // localStorage.setItem('User', this.loginModel.username);
-    // localStorage.setItem('Password', this.loginModel.password);
 
-    
-
+    debugger;
     this.loginUser.getLogin(this.loginModel).subscribe(
       (res: LoginResult) => {
         console.log(res);

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiLogin: 'https://serviportuarios-back.herokuapp.com/api/v1/auth'
+  apiLogin: 'https://serviportuarios-back.herokuapp.com/api/v1/auth',
+  apiDetail:'https://run.mocky.io/v3/205ba3e2-5bbf-445e-b1a2-66f68ba42e6f'
 };
 
 /*
